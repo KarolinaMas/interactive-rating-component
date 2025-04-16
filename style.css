@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  margin: 0;
+  height: 100vh;
+  align-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+.main-container {
+  max-width: 327px;
+  height: 360px;
+  background: #232a34;
+  margin: 0 auto;
+  border-radius: 0.938rem;
+  padding: 1.5rem;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #303a46;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #969fad;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.rating-nums {
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1,
+button {
+  margin-top: 1.5rem;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+  color: #969fad;
+  font-size: 0.875rem;
+  line-height: 22px;
+}
+
+button {
+  border: none;
+  background-color: #fc7614;
+  color: #131518;
+  padding: 1rem 0;
+  width: 100%;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 1.87px;
+}
+
+button,
+.rating-nums > .circle {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.rating-nums > .circle:hover,
+button:hover {
+  background-color: white;
+  color: #262e38;
+}
