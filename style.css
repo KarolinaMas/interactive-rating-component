@@ -81,3 +81,8 @@ button:hover {
   background-color: white;
   color: #262e38;
 }
+
+.rating-nums > .circle.selected {
+  background-color: #fc7614;
+  color: #262e38;
+}
