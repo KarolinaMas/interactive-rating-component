@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* reset and general style */
+/* reset and general styles */
 
 * {
   box-sizing: border-box;
@@ -124,4 +124,64 @@ button:hover {
   padding: 0.5rem 1rem;
   border-radius: 20px;
   margin: 1.5rem;
+  line-height: normal;
+}
+
+/* media queries */
+
+@media (min-width: 620px) {
+  .main-container {
+    max-width: 412px;
+    height: 416px;
+    border-radius: 1.875rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .circle {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .circle > img {
+    width: 17px;
+    height: 17px;
+  }
+
+  h1,
+  button {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.938rem;
+  }
+
+  button {
+    letter-spacing: 0.17px;
+  }
+
+  /* result state */
+
+  .result-container {
+    padding: 2.5rem 2rem;
+  }
+
+  .result-container > img {
+    width: 162px;
+    height: 108px;
+  }
+
+  .result-container > p {
+    font-size: 0.96rem;
+  }
+
+  .result-container > .result {
+    font-size: 0.938rem;
+    margin: 2rem;
+  }
 }
